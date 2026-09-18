@@ -7,4 +7,15 @@ spec:
   project: default
 
   source:
+    repoURL: https://github.com/ericdrosas87/iac-tutorial.git
+    targetRevision: HEAD
+    path: deploy/chart
 
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
