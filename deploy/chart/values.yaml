@@ -1,0 +1,4 @@
+image:
+  repository: my-next-app
+  tag: latest
+  pullPolicy: IfNotPresent

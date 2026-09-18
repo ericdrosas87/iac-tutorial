@@ -1,0 +1,4 @@
+containers:
+  - name: my-next-app
+    image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+    imagePullPolicy: "{{ .Values.image.pullPolicy }}"
